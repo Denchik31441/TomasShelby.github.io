@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: rgb(24, 24, 24);
+    
+}
+
+.container{
+    max-width:1240px ;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.img{
+    max-width:135px ;
+    max-height: 17px;
+}
+
+.header{
+    height:90px ;
+    border-bottom: 1px solid #6d0505;
+    margin-bottom: 59px;
+}
+
+
+
+.nav{
+    transition: 1s; /* Время эффекта */
+    text-align: center; 
+  }
+  .nav:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+
+
+
+
+
+.navbar{
+    padding-top: 37.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    word-spacing: 40px;
+}
+
+.burger{
+    display: none;
+}
+.bur{
+    max-width:26px ;
+    max-height:18px ;
+}
+
+.first {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+.second {
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    margin-bottom: 27px;
+
+    
+
+}
+
+.fird {
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+.fourth {
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.one-img{ 
+max-width: 65%;
+height: auto;
+margin-top: 15px;
+}
+
+.section{
+    margin-top: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.r{
+color: #ffffff;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-bottom: 18px;
+}
+
+.t{
+font-size: 20px;
+line-height: 24px;
+color: #ffffff;
+text-transform: uppercase;
+margin-bottom: 15.23px;
+}
+
+.y{
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 1px;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imge{
+    max-width: 387px;
+    height: auto;
+    margin-bottom: 19px;
+}
+
+
+@media (max-width: 575.98px) { 
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .two{
+        text-align: center;
+    }
+    .one-img{
+        margin-bottom: 30px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .wrapper{
+        justify-content: center;
+        
+    }
+
+  
+    
+  
+ }
+
+
+
+
+ @media (max-width: 767.98px) { 
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .two{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .one-img{
+        margin-bottom: 30px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .wrapper{
+        justify-content: center;
+        
+    }
+    
+  }
+ 
+
+ @media (max-width: 991.98px) { 
+    .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .two{
+        text-align: center;
+       
+    }
+    .one-img{
+        margin-bottom: 30px;
+        
+    }
+    .wrapper{
+        justify-content: center;
+    }
+   
+  }
+ 
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .flex{
+        column-gap: 20px;
+    }
+    .card{
+        max-width: 300px;
+    }
+    .t{
+        font-size: 15px;
+    }
+    .wrapper{
+        gap: 30px;
+        justify-content: center;
+        
+    }
+    
+   }
+
+   @media (min-width: 1200px) and (max-width: 1239px) { 
+.card{
+    max-width: 370px;
+}
+.t{
+    font-size: 15px;
+}
+.wrapper{
+    justify-content: space-between;
+}
+}
+
+
+
+.link{
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    line-height: 24px;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+  .link:hover{
+    color: #00ff0d; /* Меняем цвет текста */
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+  }
+
+
+
+
+
+
+
+
+
+
+  .card {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  img {
+    transition: transform 0.25s;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
